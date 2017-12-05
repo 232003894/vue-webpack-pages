@@ -48,6 +48,15 @@ module.exports = {
     }],
     {{/if_eq}}
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 要求函数圆括号之前有一个空格
+    "space-before-function-paren": [2, "always"],
+    // 允许未使用过的变量
+    "no-unused-vars": [0, {
+      // 仅仅检测本作用域中声明的变量是否使用，允许不使用全局环境中的变量
+      "vars": "local",
+      // 不检查参数
+      "args": "none"
+    }]
   }
 }
