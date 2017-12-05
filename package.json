@@ -1,0 +1,13 @@
+{
+  "name": "vue-webpack-pages",
+  "version": "1.2.5",
+  "license": "MIT",
+  "author": "232003894 <232003894@qq.com>",
+  "description": "multiplePages Webpack setup with hot-reload, lint-on-save,css extraction.",
+  "scripts": {
+    "docs:deploy": "bash ./deploy-docs.sh"
+  },
+  "devDependencies": {
+    "vue-cli": "^2.8.1"
+  }
+}
