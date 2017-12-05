@@ -55,8 +55,10 @@ The development server will run on port 8080 by default. If that port is already
 - src目录调整
 
 ## src目录
-#### 1. src/assets 资源文件夹：公共字体、样式、图片、js等
-#### 2. src/components 公共组件文件夹
+#### 1. src/assets 资源文件夹
+  - 公共字体、样式、图片、js等
+#### 2. src/components 
+  - 公共组件文件夹
 #### 3. src/pages 多页面应用页面文件目录
   - 页面独占文件夹，一个文件夹一个页面，文件夹名称为页面名称,例如index.html
   - 可以多级，页面名称组合：user_index.html
@@ -64,6 +66,7 @@ The development server will run on port 8080 by default. If that port is already
     - `entry.js`：页面入口文件
     - `template.html`：【非必须】页面模板文件
     - `App.vue`：页面模板文件
-#### 4. src/template.html 共用页面模板
+#### 4. src/template.html 
+  - 共用页面模板，页面文件夹中如果没有`template.html`就使用公用的页面模板
 
 
