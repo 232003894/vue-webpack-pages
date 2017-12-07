@@ -8,7 +8,7 @@
 <script>
 import HelloWorld from '../../components/HelloWorld'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 export default {
-  name: 'app'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
+  name: 'app'{{#if_eq lintConfig "airbnb"}},{{/if_eq}},
   components: {
     HelloWorld{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
