@@ -52,10 +52,6 @@ module.exports = {
         }
       ]
     },
-    "router": {
-      "type": "confirm",
-      "message": "Install vue-router?"
-    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
@@ -85,8 +81,7 @@ module.exports = {
   },
   "filters": {
     ".eslintrc.js": "lint",
-    ".eslintignore": "lint",
-    "src/pages/**/router/**/*": "router"
+    ".eslintignore": "lint"
   },
   "complete": function (data) {
     const packageJsonFile = path.join(
