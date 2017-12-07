@@ -74,6 +74,7 @@ function getHtmlPlugin(name, tpl) {
     return (new HtmlWebpackPlugin({
       filename: 'html/' + name + '.html',
       template: tpl,
+      chunks: ['_manifest.app', name],
       inject: true
     }))
   }
@@ -153,16 +154,29 @@ function convert(wc) {
     }), new webpack.optimize.CommonsChunkPlugin({
       name: '_manifest.app',
       // async: 'vendor-async',
-      minChunks: 2
+      minChunks: pageNameList.length > 1 ? pageNameList.length : Infinity
     }), new ExtractTextPlugin({
       filename: 'css/[name].css?[contenthash]',
       allChunks: true
     })]
   } else {
+    // 输出目录的配置，js,css,img,html等存放目录
+    wc.output = {
+      path: resolve('./dist'),
+      publicPath: config.dev.assetsPublicPath,
+      filename: 'js/[name].js'
+    }
     const HOST = wc.devServer.host
     const PORT = wc.devServer.port && Number(wc.devServer.port)
     proHtmlPlugin = [new OpenBrowserPlugin({
       url: 'http://' + HOST + ':' + PORT + '/html/index.html' // 测试页面选择test.html，可以自己更改
+    }), new webpack.optimize.CommonsChunkPlugin({
+      name: '_manifest.app',
+      // async: 'vendor-async',
+      minChunks: pageNameList.length
+    }), new ExtractTextPlugin({
+      filename: 'css/[name].css',
+      allChunks: true
     })]
   }
   for (let i = 0; i < pageNameList.length; i++) {
