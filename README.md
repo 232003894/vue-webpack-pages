@@ -46,10 +46,13 @@ $ npm run dev
     - "open-browser-webpack-plugin": "^0.0.5"
 - src目录调整
 
-## Documentation
+## 参考
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+- [官方模板](http://vuejs-templates.github.io/webpack)
+- [Vue2 中文](https://cn.vuejs.org/v2/guide/index.html)
+- [vue h5 plus 文档](https://232003894.github.io/vueh5plus/index.html)  [仓库](https://github.com/232003894/vueh5plus) 
+- [webpack 中文](https://doc.webpack-china.org/concepts/)
+- [vue-loader中文](https://vue-loader.vuejs.org/zh-cn/)
 
 The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 
