@@ -34,7 +34,9 @@ npm test
 ```
 
 ## 参考
-1. vueh5plus [[文档]](https://232003894.github.io/vueh5plus/index.html) [[git]](https://github.com/232003894/vueh5plus) 
-1. 多页模板 [[git]](https://github.com/232003894/vue-webpack-pages)
-1. webpack [[中文]](https://doc.webpack-china.org/concepts/)
-1. vue-loader [[中文]](https://vue-loader.vuejs.org/zh-cn/)
+- [本模板](https://github.com/232003894/vue-webpack-pages)
+- [官方模板](http://vuejs-templates.github.io/webpack)
+- [Vue2 中文](https://cn.vuejs.org/v2/guide/index.html)
+- [vue h5 plus 文档](https://232003894.github.io/vueh5plus/index.html)  [仓库](https://github.com/232003894/vueh5plus) 
+- [webpack 中文](https://doc.webpack-china.org/concepts/)
+- [vue-loader中文](https://vue-loader.vuejs.org/zh-cn/)
